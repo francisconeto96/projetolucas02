@@ -2,6 +2,7 @@
 let inputCGFOR = document.getElementById("data");
 
 let inputCOTACAO = document.getElementById("cotacao");
+let inputvendedor = document.getElementById("vendedor");
 let inputbp = document.getElementById("bp");
 let inputsegmento = document.getElementById("segmento");
 let inputmaterial = document.getElementById("material");
@@ -31,7 +32,7 @@ function ok() {
     
     
     
-    
+    let vendedor = inputvendedor.value;
     let cotacao = inputCOTACAO.value;
     let bp = inputbp.value;
     let segmento = inputsegmento.value;
@@ -47,19 +48,20 @@ function ok() {
    
 
 
-    resultado.innerHTML = `<p>CGFOR: ${data1} `;
-    resultado.innerHTML += `<p>COTAÇÃO: ${cotacao} `;
-    resultado.innerHTML += `<p>BP: ${bp} `;
-    resultado.innerHTML += `<p>SEGMENTO: ${segmento} `;
-    resultado.innerHTML += `<p>MATERIAL: ${material} `;
-    resultado.innerHTML += `<p>VOLUME: ${volume} `;
-    resultado.innerHTML += `<p>ZD01: ${zd01}% `;
-    resultado.innerHTML += `<p>ZD02: ${zd02}% `;
-    resultado.innerHTML += `<p>ZD03: ${zd03}% `;
-    resultado.innerHTML += `<p>PREÇO: R$ ${preco} `;
-    resultado.innerHTML += `<p>PAGAMENTO: ${pagamento} `;
-    resultado.innerHTML += `<p>MOTIVO: ${motivo} `;
-    resultado.innerHTML += `<p>CONCORRENTE: ${concorrente} `;
+    resultado.innerHTML = `CGFOR: ${data1}      ${vendedor} `;
+    //resultado.innerHTML += `<br>VENDEDOR(A): ${vendedor} `;
+    resultado.innerHTML += `<br>COTAÇÃO: ${cotacao} `;
+    resultado.innerHTML += `<br>BP: ${bp} `;
+    resultado.innerHTML += `<br>SEGMENTO: ${segmento} `;
+    resultado.innerHTML += `<br>MATERIAL: ${material} `;
+    resultado.innerHTML += `<br>VOLUME: ${volume} `;
+    resultado.innerHTML += `<br>ZD01: ${zd01}% `;
+    resultado.innerHTML += `<br>ZD02: ${zd02}% `;
+    resultado.innerHTML += `<br>ZD03: ${zd03}% `;
+    resultado.innerHTML += `<br>PREÇO: R$ ${preco} `;
+    resultado.innerHTML += `<br>PAGAMENTO: ${pagamento} `;
+    resultado.innerHTML += `<br>MOTIVO: ${motivo} `;
+    resultado.innerHTML += `<br>CONCORRENTE: ${concorrente} `;
     
     
 
